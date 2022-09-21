@@ -35,17 +35,18 @@
     <form class="py-3">
         <div class="form-row">
         <label class="d-block" html for="name">Name</label>
-        <input type="text" class="form-control" />
+        <input type="text" class="name" />
         </div>
-        <div class="form-row">
-        <label class="d-block" html for="description">Description</label>
-        <input type="text" class="form-control" /></div>
 
         <div class="form-row">
-            <div class="form-group col">
+        <label class="d-block" html for="description">Description</label>
+        <input type="text" class="description" /></div>
+          
+        <div class="form-row">
+            <div class="form-group1">
                 <label html for="assignedTo">Assigned To</label>
                 <select class="form-control">
-                    <option>Assigned To</option>
+                    <option>None</option>
                     <option value="Ify Ihuoma">Ify Ihuoma</option>
                     <option value="Danielle Battle">Danielle Battle</option>
                     <option value="Noah Macaluso">Noah Macaluso</option>
@@ -54,19 +55,20 @@
                 </select>
                 <!-- <input type="text" class="form-control" /> -->
             </div>
-            <div id="duedate" class="form-group col">
+            <div id="duedate" class="form-group2">
                 <label html for="dueDate" class="d-block">Due Date</label>
                 <input type="date" class="form-control" />
             </div>
             </div>
+          
             <button type="submit" class="submit-task" class="btn btn-primary btn-lg btn-block">Submit Task</button>
     </form>
     <div class="my-4">
         <h2>Tasks</h2>
     </div>
 
-    
-    <div class="cards" style="width: 18rem;">
+    <div class="column1">
+    <div class="card1" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Task 1</h5>
           <ul class="list-group list-group-flush font-weight-normal">
@@ -76,11 +78,12 @@
           </ul>
           <button type="submit" class="in-progress" class="bg-primary rounded border-0 text-white font-weight-bold text-small">IN PROGRESS</button>
           <button type="submit" class="delete" class="btn btn-primary text-white">Delete</button>
-         
+        
         </div>
       </div>
 
-      <div class="cards" style="width: 18rem;">
+      
+      <div class="card2" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Task 2</h5>
           <ul class="list-group list-group-flush font-weight-normal">
@@ -90,11 +93,11 @@
           </ul>
           <button type="submit" class="done" class="bg-success rounded border-0 text-white font-weight-bold text-small">Done</button>
           <button type="submit" class="delete" class="btn btn-primary text-white">Delete</button>
-         
+        </div>
         </div>
       </div>
-
-      <div class="cards" style="width: 18rem;">
+      <div class="column2">
+      <div class="card3" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Task 3</h5>
           <ul class="list-group list-group-flush font-weight-normal">
@@ -107,8 +110,8 @@
          
         </div>
       </div>
-
-      <div class="cards" style="width: 18rem;">
+      
+      <div class="card4" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Task 4</h5>
           <ul class="list-group list-group-flush font-weight-normal">
@@ -118,11 +121,12 @@
           </ul>
           <button type="submit" class="done" class="bg-success rounded border-0 text-white font-weight-bold text-small">Done</button>
           <button type="submit" class="delete" class="btn btn-primary text-white">Delete</button>
-         
+         </div>
         </div>
       </div>
 
-      <div class="cards">
+      <div class="column3">
+      <div class="card5">
         <div class="card my-2" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Task 5</h5>
@@ -133,9 +137,10 @@
               </ul>
               <button type="submit" class="in-progress" class="bg-primary rounded border-0 text-white font-weight-bold text-small">IN PROGRESS</button>
               <button type="submit" class="delete" class="btn btn-primary text-white">Delete</button>
-             
+             </div>
             </div>
           </div>
+
 
 </div>
 </div>

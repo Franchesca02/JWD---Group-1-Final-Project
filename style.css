@@ -13,6 +13,15 @@ body{
    background-color: #f3f5f9;
 }
 
+h1 {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-left: 200px;
+}
+
 .wrapper{
   display: flex;
   position: relative;
@@ -100,6 +109,87 @@ body{
   margin-bottom: 20px;
 }
 
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  padding: 5px 10px;
+  display: flex;
+  
+  
+}
+
+.form-row input {
+  flex: 1;
+}
+
+#duedate {
+  padding: 5px 10px;
+}
+
+form button {
+  flex: 1;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.form-group1 {
+  flex: 2;
+}
+
+.form-group2 {
+  flex: 1;
+}
+
+.description {
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(217, 217, 217, 1);
+  
+}
+
+.name {
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(217, 217, 217, 1);
+}
+
+select {
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(217, 217, 217, 1);
+}
+
+option {
+  border-radius: 5px;
+  border: none;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(217, 217, 217, 1);
+}
+
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+}
+
+
+.submit-task {
+  color: whitesmoke;
+  background-color: rgba(48, 144, 214, 1);
+  
+}
+
 .px-3 {
   margin-bottom: 20px;
   margin-left: 200px;
@@ -110,30 +200,54 @@ body{
   margin-left: 200px;
 }
 
-.cards {
+.card1 {
   margin-bottom: 20px;
   margin-left: 200px;
   height: 100px;
   width: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
-h2 {
+.card2 {
   margin-bottom: 20px;
   margin-left: 200px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
-  margin-top: 20px;
+.card3 {
+  margin-bottom: 20px;
+  margin-left: 200px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card4 {
+  margin-bottom: 20px;
+  margin-left: 200px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card5 {
+  margin-bottom: 20px;
+  margin-left: 200px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .delete {
   color: whitesmoke;
   background-color: rgba(250, 98, 98, 1);
-}
-
-.submit-task {
-  color: whitesmoke;
-  background-color: rgba(48, 144, 214, 1);
 }
 
 .in-progress {
@@ -146,16 +260,21 @@ h1 {
   border: none;
 }
 
-button {
-  border-radius: 5px;
-  border: none;
-  padding: 10px 15px;
+.cards li {
+  margin: 5px;
 }
 
-.form-row {
-  padding: 5px 10px;
+.column1 {
+  display: flex;
+  flex-direction: row;
 }
 
-#duedate {
-  padding: 10px 15px;
+.column2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.column3 {
+  display: flex;
+  flex-direction: row;
 }
