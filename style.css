@@ -15,6 +15,7 @@ body{
 
 h1 {
   margin-top: 20px;
+  text-align: center;
 }
 
 h2 {
@@ -120,12 +121,17 @@ form {
   display: flex;
 }
 
+.form-control {
+  font-size: large;
+}
+
 .form-row input {
   flex: 1;
 }
 
 #duedate {
   padding: 5px 10px;
+  font-size: large;
 }
 
 form button {
@@ -156,6 +162,16 @@ form button {
   border: none;
   background-color: rgba(217, 217, 217, 1);
 }
+label {
+  font-size: larger;
+}
+.form-row {
+  display: block;
+  clear: both;
+}
+select {
+  font-size: large;
+}
 
 select {
   border-radius: 5px;
@@ -181,6 +197,13 @@ button {
   padding: 10px 15px;
 }
 
+button:hover {
+  background-color: darkblue;
+}
+
+button:hover {
+  background-color: darkblue;
+}
 
 .submit-task {
   color: whitesmoke;
@@ -250,6 +273,15 @@ button {
 
 .in-progress {
   background-color: rgba(255, 215, 0, 1);
+}
+
+
+.in-progress:hover {
+  color: white;
+}
+
+.in-progress:hover {
+  color: white;
 }
 
 .done {
