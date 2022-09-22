@@ -15,10 +15,7 @@ body{
 
 h1 {
   margin-top: 20px;
-working
   text-align: center;
-
- master
 }
 
 h2 {
@@ -123,21 +120,18 @@ form {
   padding: 5px 10px;
   display: flex;
 }
- working
+
 .form-control {
   font-size: large;
 }
 
-master
 .form-row input {
   flex: 1;
 }
 
 #duedate {
   padding: 5px 10px;
- working
   font-size: large;
-master
 }
 
 form button {
@@ -168,7 +162,6 @@ form button {
   border: none;
   background-color: rgba(217, 217, 217, 1);
 }
-working
 label {
   font-size: larger;
 }
@@ -178,10 +171,9 @@ label {
 }
 select {
   font-size: large;
-
+}
 
 select {
- master
   border-radius: 5px;
   border: none;
   background-color: rgba(217, 217, 217, 1);
@@ -204,11 +196,14 @@ button {
   border: none;
   padding: 10px 15px;
 }
-working
+
 button:hover {
   background-color: darkblue;
 }
-master
+
+button:hover {
+  background-color: darkblue;
+}
 
 .submit-task {
   color: whitesmoke;
@@ -279,11 +274,16 @@ master
 .in-progress {
   background-color: rgba(255, 215, 0, 1);
 }
-working
+
+
 .in-progress:hover {
   color: white;
 }
-master
+
+.in-progress:hover {
+  color: white;
+}
+
 .done {
   color: whitesmoke;
   background-color: rgba(138, 192, 92, 1);
