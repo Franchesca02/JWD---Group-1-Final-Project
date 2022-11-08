@@ -125,7 +125,6 @@ form {
   font-size: large;
 }
 
-
 .form-row input {
   flex: 1;
 }
@@ -133,7 +132,6 @@ form {
 #duedate {
   padding: 5px 10px;
   font-size: large;
-
 }
 
 form button {
@@ -164,7 +162,6 @@ form button {
   border: none;
   background-color: rgba(217, 217, 217, 1);
 }
-
 label {
   font-size: larger;
 }
@@ -174,6 +171,9 @@ label {
 }
 select {
   font-size: large;
+}
+
+select {
   border-radius: 5px;
   border: none;
   background-color: rgba(217, 217, 217, 1);
@@ -201,6 +201,9 @@ button:hover {
   background-color: darkblue;
 }
 
+button:hover {
+  background-color: darkblue;
+}
 
 .submit-task {
   color: whitesmoke;
@@ -270,6 +273,11 @@ button:hover {
 
 .in-progress {
   background-color: rgba(255, 215, 0, 1);
+}
+
+
+.in-progress:hover {
+  color: white;
 }
 
 .in-progress:hover {
