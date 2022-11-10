@@ -5,7 +5,7 @@
 	<title>Group 1 Final Task</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-  <script src="./index.js"></script>
+  <script src="./index.js" defer></script>
 </head>
 <body>
 <div class="wrapper">
@@ -31,7 +31,7 @@
     <div>
         <h2>New Task</h2>
     </div>
-    <form name="myForm" class="py-3">
+    <form id= "newTaskForm" name="myForm" class="py-3">
         <div class="form-row">
         <label class="d-block" html for="name">Name</label>
         <input id="name" type="text" class="name">
@@ -44,10 +44,10 @@
       </div>
         
 
-        <div class="form-row">
+        <div id="assignedTo" class="form-row">
             <div class="form-group1">
                 <label html for="assignedTo">Assigned To</label>
-                <select id="assignedTo" class="form-control" >
+                <select class="form-control" >
                     <option>None</option>
                     <option value="Ify Ihuoma">Ify Ihuoma</option>
                     <option value="Danielle Battle">Danielle Battle</option>
@@ -67,13 +67,13 @@
             </div>
             </div>
           
-            <button id="submitButton" type="submit" class="submit-task" class="btn btn-primary btn-lg btn-block" onclick="message()">Submit Task</button>
+            <button id="submitButton" type="submit" class="submit-task" class="btn btn-primary btn-lg btn-block">Submit Task</button>
             <div id="message">
                 <div id="success" class="alert alert-success" role="alert">
-                    
+                  Submitted!
                 </div>
-                <div id="danger" class="alert alert-danger" role="alert">
-                    
+                <div id="emptyField" class="alert alert-danger" role="alert">
+                  Fields Cannot Be Empty!
                 </div>
             </div>
     </form>
