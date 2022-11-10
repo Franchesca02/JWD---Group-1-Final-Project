@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
+  <script src="./index.js" defer></script>
+
+
 </head>
 <body>
 
@@ -45,9 +48,13 @@
     <div>
         <h2>New Task</h2>
     </div>
-    <form class="py-3">
+    <form id= "newTaskForm" name="myForm" class="py-3">
         <div class="form-row">
         <label class="d-block" html for="name">Name</label>
+
+        <input id="name" type="text" class="name">
+        <small></small>
+
 
         <input type="text" class="name" />
         </div>
@@ -64,10 +71,22 @@
 
         <input type="text" class="name" />
 
+
         </div>
 
         <div class="form-row">
         <label class="d-block" html for="description">Description</label>
+
+        <input id="description" type="text" class="description">
+        <small></small>
+      </div>
+        
+
+        <div id="assignedTo" class="form-row">
+            <div class="form-group1">
+                <label html for="assignedTo">Assigned To</label>
+    <select class="form-control" >
+
  
         <br>
         <input type="text" class="form-control" /></div>
@@ -81,6 +100,7 @@
                 <label html for="assignedTo">Assigned To</label>
                 <br>
                 <select class="form-control">
+
                     <option>None</option>
                     <option value="Ify Ihuoma">Ify Ihuoma</option>
                     <option value="Danielle Battle">Danielle Battle</option>
@@ -92,14 +112,25 @@
                     <option value="Bethelihem Begahsaw">Bethelihem Begahsaw</option>
                 </select>
                 <!-- <input type="text" class="form-control" /> -->
+                <small></small>
             </div>
+            
             <div id="duedate" class="form-group2">
                 <label html for="dueDate" class="d-block">Due Date</label>
-                <input type="date" class="form-control" />
+                <input id="dueDate" type="date" class="form-control">
+                <small></small>
             </div>
             </div>
           
-            <button type="submit" class="submit-task" class="btn btn-primary btn-lg btn-block">Submit Task</button>
+            <button id="submitButton" type="submit" class="submit-task" class="btn btn-primary btn-lg btn-block">Submit Task</button>
+            <div id="message">
+                <div id="success" class="alert alert-success" role="alert">
+                  Submitted!
+                </div>
+                <div id="emptyField" class="alert alert-danger" role="alert">
+                  Fields Cannot Be Empty!
+                </div>
+            </div>
     </form>
     <div class="my-4">
         <h2>Tasks</h2>

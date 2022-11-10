@@ -308,3 +308,29 @@ button:hover {
   display: flex;
   flex-direction: row;
 }
+
+.message {
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+#success {
+  font-size: 20px;
+  color: green;
+  position: absolute;
+  animation: buttons .3s linear;
+  display: flex;
+  visibility: hidden;
+}
+
+#emptyField {
+  font-size: 20px;
+  color: red;
+  position: absolute;
+  animation: buttons .3s linear;
+  display: flex;
+  visibility: hidden;
+}
