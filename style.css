@@ -317,20 +317,31 @@ button:hover {
   justify-content: center;
 }
 
+
+.message .success {
+
 #success {
+
   font-size: 20px;
   color: green;
   position: absolute;
   animation: buttons .3s linear;
   display: flex;
+
+}
+
+.message .danger {
+
   visibility: hidden;
 }
 
 #emptyField {
+
   font-size: 20px;
   color: red;
   position: absolute;
   animation: buttons .3s linear;
   display: flex;
+
   visibility: hidden;
 }
