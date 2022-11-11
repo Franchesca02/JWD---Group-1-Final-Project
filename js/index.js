@@ -1,3 +1,5 @@
+const taskManager = new TaskManager();
+
 function validFormFieldInput(data){
 
   if (typeof data !== 'string'){
