@@ -17,7 +17,10 @@
   <script src="./index.js"></script>
   
 
- master
+
+  <script src="./index.js" defer></script>
+
+
 </head>
 <body>
 
@@ -49,10 +52,18 @@
     <div>
         <h2>New Task</h2>
     </div>
+
     <form name="myForm" class="py-3">
+
+    <form id= "newTaskForm" name="myForm" class="py-3">
+
         <div class="form-row">
         <label class="d-block" html for="name">Name</label>
  
+        <input id="name" type="text" class="name">
+        <small></small>
+
+
         <input id="name" type="text" class="name">
         <small></small>
 
@@ -72,11 +83,22 @@
 
         <input type="text" class="name" />
 
- 
+
         </div>
 
         <div class="form-row">
         <label class="d-block" html for="description">Description</label>
+
+        <input id="description" type="text" class="description">
+        <small></small>
+      </div>
+        
+
+        <div id="assignedTo" class="form-row">
+            <div class="form-group1">
+                <label html for="assignedTo">Assigned To</label>
+    <select class="form-control" >
+
  
         <input id="description" type="text" class="description">
         <small></small>
@@ -101,6 +123,7 @@
                 <label html for="assignedTo">Assigned To</label>
                 <br>
                 <select class="form-control">
+
                     <option>None</option>
                     <option value="Ify Ihuoma">Ify Ihuoma</option>
                     <option value="Danielle Battle">Danielle Battle</option>
@@ -122,6 +145,7 @@
             </div>
             </div>
           
+
             <button id="submitButton" type="submit" class="submit-task" class="btn btn-primary btn-lg btn-block" onclick="message()">Submit Task</button>
             <div id="message">
                 <div id="success" class="alert alert-success" role="alert">
@@ -129,6 +153,15 @@
                 </div>
                 <div id="danger" class="alert alert-danger" role="alert">
                     
+
+            <button id="submitButton" type="submit" class="submit-task" class="btn btn-primary btn-lg btn-block">Submit Task</button>
+            <div id="message">
+                <div id="success" class="alert alert-success" role="alert">
+                  Submitted!
+                </div>
+                <div id="emptyField" class="alert alert-danger" role="alert">
+                  Fields Cannot Be Empty!
+
                 </div>
             </div>
     </form>
