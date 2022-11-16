@@ -22,7 +22,22 @@ h2 {
   margin-bottom: 20px;
   margin-left: 200px;
 }
-
+#bton {
+  background: linear-gradient(to right, #4b4276, #bdb8d7);
+  color: #4b4276;
+}
+#task-header {
+  color: #bdb8d7;
+}
+.labels {
+  color: #bdb8d7;
+  font-size: 16px;
+  font: 500;
+}
+#parent-div {
+  background: linear-gradient(to bottom, #ca8504, #10781c);
+  padding-left: 20px;
+}
 .wrapper{
   display: flex;
   position: relative;
@@ -35,13 +50,15 @@ h2 {
   padding: 30px 0px;
   position: fixed;
 }
-
-.wrapper .sidebar h2{
+#alerts {
+  display: none;
+}
+/* .wrapper .sidebar h2{
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
-}
+} */
 
 .wrapper .sidebar ul li{
   padding: 15px;
@@ -190,7 +207,6 @@ input {
   background-color: rgba(217, 217, 217, 1);
 }
 
-
 button {
   border-radius: 5px;
   border: none;
@@ -318,10 +334,9 @@ button:hover {
 }
 
 
-.message .success {
+/* .message .success { */
 
 #success {
-
   font-size: 20px;
   color: green;
   position: absolute;
@@ -344,4 +359,11 @@ button:hover {
   display: flex;
 
   visibility: hidden;
+}
+
+@media only screen and(max-width: 600px) {
+  .sidebar {
+    display: none;
+  
+  }
 }
